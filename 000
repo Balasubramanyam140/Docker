@@ -1,6 +1,8 @@
 1) WHat is Docker ?
 2) What is Container?
 3) Diff bt Virtual Machinnes(VMs) Vs Containers
+4) Docker Images and Registries
+
 --------------------------------------------------------------------------------------
 1) WHat is Docker ?
       Docker is a tool used to package an application along with all its dependencies ( libraries, configurations, runtime, etc.,) into a small unit called a container.
@@ -76,3 +78,35 @@
             Container 2 -> MySQL
             Container 3 -> React
           All containers share the same OS kernel.
+
+4) Docker Images and Registries
+
+            Docker Images
+            ------------
+            A Docker Image is a lightweight, read-only template that contains application code, runtime, libraries, 
+             dependencies, and configurations required to run an application. Docker uses an image to create one or more containers.
+                                                or
+                  A Docker Image is a read-only template that contains everything needed to run an application:
+                  
+                  Application code
+                  Runtime (Java, Python, Node.js, etc.)
+                  Libraries and dependencies
+                  Configuration files
+                  OS packages
+                  
+                  Think of it like a blueprint or template from which Docker creates containers.
+
+            Registries
+            ----------
+            A Docker Registry is a centralized storage location where Docker images are stored, managed, and distributed. Images can be pushed to 
+             and pulled from a registry. Docker Hub is the default public registry, while organizations may use private registries such as Azure Container Registry.
+           
+            =========================================================================
+          |        Image                   vs             Registry                  |
+            ========================================================================
+            Contains application package	 |     Stores images
+            Blueprint/Template             |	Warehouse/Store
+            Used to create containers      |	Used to share images
+            Created using docker build     | 	Accessed using docker push and docker pull
+            =======================================================================
+            
