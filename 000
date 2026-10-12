@@ -1,6 +1,6 @@
 1) WHat is Docker ?
 2) What is Container?
-
+3) Diff bt Virtual Machinnes(VMs) Vs Containers
 --------------------------------------------------------------------------------------
 1) WHat is Docker ?
       Docker is a tool used to package an application along with all its dependencies ( libraries, configurations, runtime, etc.,) into a small unit called a container.
@@ -11,3 +11,68 @@
 2) What is Container ?
       A container is a lightweight, isolated environment that packages an application along with all its dependencies and configuration, 
        allowing it to run consistently across different environments. Docker is the most commonly used container platform.
+
+
+3) Diff bt Virtual Machinnes(VMs) Vs Containers
+      Virtual Machine (VM)
+      --------------------
+            Plain Text
+            Physical Server
+            ↓
+            Hypervisor
+            ↓
+            VM 1 (Guest OS + App)
+            VM 2 (Guest OS + App)
+            VM 3 (Guest OS + App)
+            
+            Each VM has its own Operating System.
+            
+      Containes
+      ----------
+            Plain Text
+            Physical Server
+            ↓
+            Host OS
+            ↓
+            Docker Engine
+            ↓
+            Container 1 (App)
+            Container 2 (App)
+            Container 3 (App)
+            
+            Containers share the Host OS kernel.
+            
+      Difference
+      -----------
+          ===============================================================
+         |   Virtual Machine	          |        Container              |
+          ===============================================================
+            Has its own OS	          |         Shares Host OS
+            Heavyweight                 |  	Lightweight
+            Starts in minutes	          |        Starts in seconds
+            Uses more RAM & CPU	    |        Uses less RAM & CPU
+            Larger size (GBs)	          |        Smaller size (MBs)
+            Better isolation	          |        Good isolation
+            Managed by Hypervisor       |     	Managed by Docker
+          ===============================================================
+
+      Real Example
+      -------------
+      Suppose you have:
+            Spring Boot App
+            MySQL
+            React App
+      
+      Using VMs :-
+            Plain Text
+            VM 1 -> Ubuntu + Spring Boot
+            VM 2 -> Ubuntu + MySQL
+            VM 3 -> Ubuntu + React
+          Three operating systems are running.
+      
+      Using Containers :-
+            Plain Text
+            Container 1 -> Spring Boot
+            Container 2 -> MySQL
+            Container 3 -> React
+          All containers share the same OS kernel.
