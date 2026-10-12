@@ -1,8 +1,13 @@
 1) WHat is Docker ?
-
+2) What is Container?
 
 --------------------------------------------------------------------------------------
 1) WHat is Docker ?
       Docker is a tool used to package an application along with all its dependencies ( libraries, configurations, runtime, etc.,) into a small unit called a container.
                                     or
       Docker is a containerization platform that allows developers to build, package and run applications consistently across different environments.
+
+
+2) What is Container ?
+      A container is a lightweight, isolated environment that packages an application along with all its dependencies and configuration, 
+       allowing it to run consistently across different environments. Docker is the most commonly used container platform.
