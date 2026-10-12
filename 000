@@ -1,9 +1,33 @@
+0) Docker Flow
 1) WHat is Docker ?
 2) What is Container?
 3) Diff bt Virtual Machinnes(VMs) Vs Containers
 4) Docker Images and Registries
 
 --------------------------------------------------------------------------------------
+0) Docker Flow
+
+      Complete Docker Flow
+
+            Developer Code
+            ↓
+            docker build
+            ↓
+            Docker Image
+            ↓
+            docker push
+            ↓
+            Docker Registry
+            ↓
+            docker pull
+            ↓
+            Docker Image
+            ↓
+            docker run
+            ↓
+            Docker Container
+
+
 1) WHat is Docker ?
       Docker is a tool used to package an application along with all its dependencies ( libraries, configurations, runtime, etc.,) into a small unit called a container.
                                     or
